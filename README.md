@@ -1,6 +1,9 @@
-# gatsby-remark-component [![Build Status][travis-badge]][travis]
+# Gatsby Remark Component  [![Build Status](https://travis-ci.org/Hebilicious/gatsby-remark-component.svg?branch=master)](https://travis-ci.org/Hebilicious/gatsby-remark-component) [![npm version](https://badge.fury.io/js/gatsby-remark-component.svg)](https://badge.fury.io/js/gatsby-remark-component)
 
-Gatsby-transformer-remark plugin that change the AST node parent of a custom component to a div.
+A gatsby-transformer-remark plugin that change the AST node parent of a custom component to a div.
+
+> - [Gatsby](https://www.gatsbyjs.org/)
+> - [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
 ## Install
 
@@ -119,7 +122,3 @@ Some text
 ```
 
 This will render your component without any validateDOMNesting warning.
-
-### TODO
-
-* Tests
