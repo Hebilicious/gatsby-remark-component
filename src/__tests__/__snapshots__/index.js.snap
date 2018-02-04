@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark component plugin Should render markdown with inline html properly. 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 1,
+              "line": 2,
+              "offset": 10,
+            },
+            "indent": Array [
+              1,
+            ],
+            "start": Object {
+              "column": 1,
+              "line": 1,
+              "offset": 0,
+            },
+          },
+          "type": "text",
+          "value": "Text test
+",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 24,
+            },
+            "indent": Array [],
+            "start": Object {
+              "column": 1,
+              "line": 2,
+              "offset": 10,
+            },
+          },
+          "type": "html",
+          "value": "<my-component>",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 30,
+              "line": 2,
+              "offset": 39,
+            },
+            "indent": Array [],
+            "start": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 24,
+            },
+          },
+          "type": "html",
+          "value": "</my-component>",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 8,
+              "line": 3,
+              "offset": 47,
+            },
+            "indent": Array [
+              1,
+            ],
+            "start": Object {
+              "column": 30,
+              "line": 2,
+              "offset": 39,
+            },
+          },
+          "type": "text",
+          "value": "
+###Test",
+        },
+      ],
+      "position": Position {
+        "end": Object {
+          "column": 8,
+          "line": 3,
+          "offset": 47,
+        },
+        "indent": Array [
+          1,
+          1,
+        ],
+        "start": Object {
+          "column": 1,
+          "line": 1,
+          "offset": 0,
+        },
+      },
+      "type": "div",
+    },
+  ],
+  "position": Object {
+    "end": Object {
+      "column": 8,
+      "line": 3,
+      "offset": 47,
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+      "offset": 0,
+    },
+  },
+  "type": "root",
+}
+`;
+
+exports[`remark component plugin Should set a component parent type to div in the AST. 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 1,
+              "line": 2,
+              "offset": 10,
+            },
+            "indent": Array [
+              1,
+            ],
+            "start": Object {
+              "column": 1,
+              "line": 1,
+              "offset": 0,
+            },
+          },
+          "type": "text",
+          "value": "Text test
+",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 24,
+            },
+            "indent": Array [],
+            "start": Object {
+              "column": 1,
+              "line": 2,
+              "offset": 10,
+            },
+          },
+          "type": "html",
+          "value": "<my-component>",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 30,
+              "line": 2,
+              "offset": 39,
+            },
+            "indent": Array [],
+            "start": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 24,
+            },
+          },
+          "type": "html",
+          "value": "</my-component>",
+        },
+        Object {
+          "position": Position {
+            "end": Object {
+              "column": 8,
+              "line": 3,
+              "offset": 47,
+            },
+            "indent": Array [
+              1,
+            ],
+            "start": Object {
+              "column": 30,
+              "line": 2,
+              "offset": 39,
+            },
+          },
+          "type": "text",
+          "value": "
+###Test",
+        },
+      ],
+      "position": Position {
+        "end": Object {
+          "column": 8,
+          "line": 3,
+          "offset": 47,
+        },
+        "indent": Array [
+          1,
+          1,
+        ],
+        "start": Object {
+          "column": 1,
+          "line": 1,
+          "offset": 0,
+        },
+      },
+      "type": "div",
+    },
+  ],
+  "position": Object {
+    "end": Object {
+      "column": 8,
+      "line": 3,
+      "offset": 47,
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+      "offset": 0,
+    },
+  },
+  "type": "root",
+}
+`;

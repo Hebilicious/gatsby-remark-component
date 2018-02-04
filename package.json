@@ -18,6 +18,23 @@
     "remark",
     "markdown"
   ],
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-file dist/dist.js --ignore __tests__",
+    "prepublish": "npm run build && npm run test && minify dist -d dist"
+  },
   "license": "MIT",
-  "main": "index.js"
+  "main": "dist/dist.js",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-minify": "^0.3.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.1.4",
+    "remark": "^9.0.0"
+  }
 }

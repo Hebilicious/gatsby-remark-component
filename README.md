@@ -4,7 +4,9 @@ Gatsby-transformer-remark plugin that change the AST node parent of a custom com
 
 ## Install
 
-`yarn add gatsby-transformer-remark gatsby-remark-component`
+```bash
+yarn add gatsby-transformer-remark gatsby-remark-component
+```
 
 ## How to use
 
@@ -84,26 +86,26 @@ const renderAst = new rehypeReact({
 
 Replace :
 
-```html
+```jsx
 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 ```
 
 by:
 
-```html
+```jsx
 <div>{renderAst(post.htmlAst)}</div>
 ```
 
 And in your page query ... :
 
 ```jsx
-# ...
+//...
 markdownRemark(fields: { slug: { eq: $slug } }) {
- htmlAst # previously `html`
+ htmlAst // previously `html`
 
- # other fields...
+ //other fields...
 }
-# ...
+//...
 ```
 
 Now in your markdown you can do:
