@@ -22,7 +22,7 @@
     "test": "jest",
     "build": "babel src --out-file index.js --ignore __tests__",
     "minify": "minify index.js --out-file index.js",
-    "prepublish": "npm run test && npm run build && npm run minify"
+    "prepublish": "npm run build && npm run minify"
   },
   "license": "MIT",
   "main": "index.js",
