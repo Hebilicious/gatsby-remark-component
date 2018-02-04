@@ -1,4 +1,4 @@
-# gatsby-remark-component
+# gatsby-remark-component [![Build Status][travis-badge]][travis]
 
 Gatsby-transformer-remark plugin that change the AST node parent of a custom component to a div.
 
