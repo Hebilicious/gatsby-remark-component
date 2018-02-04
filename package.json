@@ -1,6 +1,7 @@
 {
   "name": "gatsby-remark-component",
-  "description": "When you use a React component in your markdown, it will insert it as a div instead of a p",
+  "description":
+    "When you use a React component in your markdown, it will insert it as a div instead of a p",
   "version": "1.0.1",
   "author": "Hebilicious <xsh4k3@gmail.com>",
   "repository": {
@@ -20,15 +21,13 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel src --out-file dist/dist.js --ignore __tests__",
-    "prepublish": "npm run build && npm run test && minify dist -d dist"
+    "build": "babel src --out-file index.js --ignore __tests__",
+    "minify": "minify index.js --out-file index.js",
+    "prepublish": "npm run test && npm run build && npm run minify"
   },
   "license": "MIT",
-  "main": "dist/dist.js",
+  "main": "index.js",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.39",
-    "@babel/core": "^7.0.0-beta.39",
-    "@babel/preset-env": "^7.0.0-beta.39",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
