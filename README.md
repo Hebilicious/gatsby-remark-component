@@ -1,9 +1,9 @@
-# Gatsby Remark Component  [![Build Status](https://travis-ci.org/Hebilicious/gatsby-remark-component.svg?branch=master)](https://travis-ci.org/Hebilicious/gatsby-remark-component) [![npm version](https://badge.fury.io/js/gatsby-remark-component.svg)](https://badge.fury.io/js/gatsby-remark-component)
+# Gatsby Remark Component [![Build Status](https://travis-ci.org/Hebilicious/gatsby-remark-component.svg?branch=master)](https://travis-ci.org/Hebilicious/gatsby-remark-component) [![npm version](https://badge.fury.io/js/gatsby-remark-component.svg)](https://badge.fury.io/js/gatsby-remark-component)
 
 A gatsby-transformer-remark plugin that change the AST node parent of a custom component to a div.
 
-> - [Gatsby](https://www.gatsbyjs.org/)
-> - [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
+> * [Gatsby](https://www.gatsbyjs.org/)
+> * [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
 ## Install
 
@@ -11,14 +11,35 @@ A gatsby-transformer-remark plugin that change the AST node parent of a custom c
 yarn add gatsby-transformer-remark gatsby-remark-component
 ```
 
+## Release Notes
+
+> v 1.2
+
+* New configuration options!
+* Can now auto-detect your custom components.
+
 ## How to use
 
 > Read the great custom component article on the official gatsby remark blog [here](https://using-remark.gatsbyjs.org/custom-components/).
 
-You need to explicitly declare the name of the components that you want to use in your markdown.
+This is the base settings, your components inside your markdown will be auto-detected.
 
 ```js
-//In your gatsby-config.js
+//In your gatsby-config.js ...
+plugins: [
+  {
+    resolve: "gatsby-transformer-remark",
+    options: {
+      plugins: ["gatsby-remark-component"]
+    }
+  }
+]
+```
+
+You can explicitly declare the name of the components if you want to be strict. (it will disable the auto-detection
+)
+
+```js
 plugins: [
   {
     resolve: "gatsby-transformer-remark",
