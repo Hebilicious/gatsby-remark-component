@@ -1,8 +1,8 @@
 const visit = require("unist-util-visit")
 import { html } from "./html-tags.js"
 
+console.log("Initializing gatsby-remark-component")
 module.exports = ({ markdownAST }, { components }) => {
-  console.log("Initializing gatsby-remark-component")
   if (!components || components.length == 0) {
     setParentForNonHtmlElements(markdownAST)
     return
@@ -12,7 +12,6 @@ module.exports = ({ markdownAST }, { components }) => {
   }
 
   function setParentForComponents(markdownAST, components) {
-    console.log(`Options provided ${JSON.stringify(components)}`)
     components.forEach(comp => {
       visit(markdownAST, `html`, (node, index, parent) => {
         if (node.value == `<${comp}>`) {
@@ -24,7 +23,6 @@ module.exports = ({ markdownAST }, { components }) => {
   }
 
   function setParentForNonHtmlElements(markdownAST) {
-    console.log("No options provided.")
     visit(markdownAST, "html", (node, index, parent) => {
       if (!html.some(tag => node.value == `<${tag}>`)) {
         console.log("Found a custom tag " + node.value)

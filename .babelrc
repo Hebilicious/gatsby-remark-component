@@ -3,10 +3,12 @@
     [
       "env",
       {
+        "modules": false,
         "targets": {
-          "node": "current"
+          "node": "0.12"
         }
       }
     ]
-  ]
+  ],
+  "plugins": ["external-helpers"]
 }

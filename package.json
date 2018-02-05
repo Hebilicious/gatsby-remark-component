@@ -1,13 +1,19 @@
 {
   "name": "gatsby-remark-component",
-  "description": "When you use a React component in your markdown, it will insert it as a div instead of a p",
+  "description":
+    "When you use a React component in your markdown, it will insert it as a div instead of a p",
   "version": "1.0.2",
   "author": "Hebilicious <xsh4k3@gmail.com>",
+  "main": "lib.js",
+  "files": ["src"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hebilicious/gatsby-remark-component.git"
   },
   "dependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.0.2",
     "unist-util-visit": "^1.1.1"
   },
   "keywords": [
@@ -19,20 +25,20 @@
     "markdown"
   ],
   "scripts": {
+    "pretest": "npm run build",
     "test": "jest",
-    "build": "babel src --out-file index.js --ignore __tests__",
-    "minify": "minify index.js --out-file index.js",
-    "prepublish": "npm run build && npm run minify"
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "prepublish": "npm run test"
   },
   "license": "MIT",
-  "main": "index.js",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
-    "babel-minify": "^0.3.0",
     "babel-preset-env": "^1.6.1",
     "jest": "^22.1.4",
-    "remark": "^9.0.0"
+    "remark": "^9.0.0",
+    "rollup": "^0.55.3"
   }
 }

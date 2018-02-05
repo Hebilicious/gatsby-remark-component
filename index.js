@@ -1,1 +1,0 @@
-"use strict";const visit=require("unist-util-visit");module.exports=({markdownAST:a},{components:b})=>{b.forEach((b)=>{visit(a,`html`,(a,c,d)=>{`<${b}>`==a.value&&(d.type="div")})})};
