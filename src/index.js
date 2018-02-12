@@ -24,7 +24,7 @@ module.exports = ({ markdownAST }, { components }) => {
 
   function setParentForNonHtmlElements(markdownAST) {
     visit(markdownAST, "html", (node, index, parent) => {
-      if (!html.some(tag => node.value == `<${tag}>`)) {
+      if (!html.some(tag => node.value.startsWith(`<${tag}`) || node.value.startsWith(`</${tag}`))) {
         console.log("Found a custom tag " + node.value)
         parent.type = "div"
       }

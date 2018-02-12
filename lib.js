@@ -30,7 +30,7 @@ module.exports = function (_ref, _ref2) {
   function setParentForNonHtmlElements(markdownAST) {
     visit(markdownAST, "html", function (node, index, parent) {
       if (!html.some(function (tag) {
-        return node.value == "<" + tag + ">";
+        return node.value.indexOf("<" + tag) == 0 || node.value.indexOf("</" + tag) == 0;
       })) {
         console.log("Found a custom tag " + node.value);
         parent.type = "div";
