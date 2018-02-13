@@ -1,12 +1,11 @@
 {
   "name": "gatsby-remark-component",
-  "description": "When you use a React component in your markdown, it will insert it as a div instead of a p",
-  "version": "1.1.0",
+  "description":
+    "When you use a React component in your markdown, it will insert it as a div instead of a p",
+  "version": "1.1.1",
   "author": "Hebilicious <xsh4k3@gmail.com>",
   "main": "lib.js",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hebilicious/gatsby-remark-component.git"
