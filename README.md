@@ -13,7 +13,7 @@ yarn add gatsby-transformer-remark gatsby-remark-component
 
 ## Release Notes
 
-> v 1.2
+> v 1.1
 
 * New configuration options!
 * Can now auto-detect your custom components.
