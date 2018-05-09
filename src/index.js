@@ -1,7 +1,6 @@
 const visit = require("unist-util-visit")
 import { html } from "./html-tags.js"
 
-console.log("Initializing gatsby-remark-component")
 module.exports = ({ markdownAST }, { components }) => {
   if (!components || components.length == 0) {
     setParentForNonHtmlElements(markdownAST)
@@ -29,7 +28,6 @@ module.exports = ({ markdownAST }, { components }) => {
           tag => node.value == `<${tag}>` || node.value.startsWith(`<${tag} `)
         )
       ) {
-        console.log("Found a custom tag " + node.value)
         parent.type = "div"
       }
     })
