@@ -13,6 +13,10 @@ yarn add gatsby-transformer-remark gatsby-remark-component
 
 ## Release Notes
 
+> v 1.4
+
+* Removes console logs
+
 > v 1.1
 
 * New configuration options!
