@@ -5,7 +5,8 @@
   "author": "Hebilicious <xsh4k3@gmail.com>",
   "main": "lib.js",
   "files": [
-    "src"
+    "src",
+    "lib.js"
   ],
   "repository": {
     "type": "git",
