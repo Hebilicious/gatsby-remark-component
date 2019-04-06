@@ -1,5 +1,5 @@
-const visit = require('unist-util-visit')
-import { html } from './html-tags.js'
+const visit = require("unist-util-visit")
+import { html } from "./html-tags.js"
 
 module.exports = ({ markdownAST }, { components }) => {
   if (!components || components.length == 0) {
@@ -15,20 +15,20 @@ module.exports = ({ markdownAST }, { components }) => {
       visit(markdownAST, `html`, (node, index, parent) => {
         if (node.value == `<${comp}>`) {
           // Setting type of component ('comp') to 'div'.
-          parent.type = 'div'
+          parent.type = "div"
         }
       })
     })
   }
 
   function setParentForNonHtmlElements(markdownAST) {
-    visit(markdownAST, 'html', (node, index, parent) => {
+    visit(markdownAST, "html", (node, index, parent) => {
       if (
         !html.some(
           tag => node.value == `<${tag}>` || node.value.startsWith(`<${tag} `)
         )
       ) {
-        parent.type = 'div'
+        parent.type = "div"
       }
     })
   }

@@ -9,4 +9,4 @@ install:
 
 script:
   - yarn test
-  - yarn run prettier --list-different 'src/**/*.js'
+  - yarn run prettier --list-different 'src/**/*.js' './*.config.js'
