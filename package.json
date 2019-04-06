@@ -26,6 +26,7 @@
     "test": "jest",
     "dev": "rollup -c --watch",
     "build": "rollup -c",
+    "prepare": "rollup -c",
     "prepublish": "npm run test"
   },
   "license": "MIT",
