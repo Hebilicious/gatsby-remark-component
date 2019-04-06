@@ -1,7 +1,7 @@
-{
+module.exports = {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "modules": false,
         "targets": {
@@ -9,6 +9,5 @@
         }
       }
     ]
-  ],
-  "plugins": ["external-helpers"]
+  ]
 }
