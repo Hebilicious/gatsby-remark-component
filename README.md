@@ -3,8 +3,8 @@
 > ```sh
 > yarn add gatsby-remark-component@npm:@rstacruz/gatsby-remark-component
 > ```
-> 
-> The rest of the original README is quoted below.
+>
+> The rest of the original README is quoted below. For a list of improvements in this fork, see [CHANGELOG](./CHANGELOG.md).
 
 ---
 
