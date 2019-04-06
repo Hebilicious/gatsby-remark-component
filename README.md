@@ -1,4 +1,10 @@
-> NB: This is an unofficial maintenance fork of [Hebilicious/gatsby-remark-component](https://github.com/Hebilicious/gatsby-remark-component), continued from it's v1.1.3. This fork is published under `@rstacruz/gatsby-remark-component`.
+> NB: This is an unofficial maintenance fork of [Hebilicious/gatsby-remark-component](https://github.com/Hebilicious/gatsby-remark-component), continued from it's v1.1.3. This fork is published under `@rstacruz/gatsby-remark-component`. You can use this as a drop-in subtitute for `gatsby-remark-component` using Yarn:
+>
+> ```sh
+> yarn add gatsby-remark-component@npm:@rstacruz/gatsby-remark-component
+> ```
+> 
+> The rest of the original README is quoted below.
 
 ---
 
@@ -12,7 +18,7 @@ A gatsby-transformer-remark plugin that change the AST node parent of a custom c
 ## Install
 
 ```bash
-yarn add gatsby-transformer-remark @rstacruz/gatsby-remark-component
+yarn add gatsby-transformer-remark gatsby-remark-component
 ```
 
 ## Release Notes
