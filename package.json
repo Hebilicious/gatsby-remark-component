@@ -1,5 +1,5 @@
 {
-  "name": "@rstacruz/gatsby-remark-component",
+  "name": "gatsby-remark-component",
   "description": "When you use a React component in your markdown, it will insert it as a div instead of a p",
   "version": "1.2.0-pre.1",
   "author": "Hebilicious <xsh4k3@gmail.com>",
