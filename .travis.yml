@@ -1,17 +1,12 @@
 language: node_js
 node_js:
-- '9.0'
-os: [linux]
-dist: trusty
-sudo: false
+- '10.0'
 cache:
   yarn: true
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
 
 install:
   - yarn
 
 script:
   - yarn test
+  - yarn run prettier --list-different 'src/**/*.js' './*.config.js'

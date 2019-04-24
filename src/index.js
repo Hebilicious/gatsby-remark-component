@@ -14,7 +14,7 @@ module.exports = ({ markdownAST }, { components }) => {
     components.forEach(comp => {
       visit(markdownAST, `html`, (node, index, parent) => {
         if (node.value == `<${comp}>`) {
-          console.log(`Setting type of ${comp} parent to div.`)
+          // Setting type of component ('comp') to 'div'.
           parent.type = "div"
         }
       })

@@ -1,9 +1,19 @@
+> NB: This is an unofficial maintenance fork of [Hebilicious/gatsby-remark-component](https://github.com/Hebilicious/gatsby-remark-component), continued from it's v1.1.3. This fork is published under `@rstacruz/gatsby-remark-component`. You can use this as a drop-in subtitute for `gatsby-remark-component` using Yarn:
+>
+> ```sh
+> yarn add gatsby-remark-component@npm:@rstacruz/gatsby-remark-component
+> ```
+>
+> The rest of the original README is quoted below. For a list of improvements in this fork, see [CHANGELOG](./CHANGELOG.md).
+
+---
+
 # Gatsby Remark Component [![Build Status](https://travis-ci.org/Hebilicious/gatsby-remark-component.svg?branch=master)](https://travis-ci.org/Hebilicious/gatsby-remark-component) [![npm version](https://badge.fury.io/js/gatsby-remark-component.svg)](https://badge.fury.io/js/gatsby-remark-component)
 
 A gatsby-transformer-remark plugin that change the AST node parent of a custom component to a div.
 
-> * [Gatsby](https://www.gatsbyjs.org/)
-> * [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
+> - [Gatsby](https://www.gatsbyjs.org/)
+> - [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
 ## Install
 
@@ -15,8 +25,8 @@ yarn add gatsby-transformer-remark gatsby-remark-component
 
 > v 1.1
 
-* New configuration options!
-* Can now auto-detect your custom components.
+- New configuration options!
+- Can now auto-detect your custom components.
 
 ## How to use
 
