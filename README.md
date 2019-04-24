@@ -1,10 +1,4 @@
-> NB: This is an unofficial maintenance fork of [Hebilicious/gatsby-remark-component](https://github.com/Hebilicious/gatsby-remark-component), continued from it's v1.1.3. This fork is published under `@rstacruz/gatsby-remark-component`. You can use this as a drop-in subtitute for `gatsby-remark-component` using Yarn:
->
-> ```sh
-> yarn add gatsby-remark-component@npm:@rstacruz/gatsby-remark-component
-> ```
->
-> The rest of the original README is quoted below. For a list of improvements in this fork, see [CHANGELOG](./CHANGELOG.md).
+> Disclaimer : I haven't been maintaining this package. Look into forks like `@rstacruz/gatsby-remark-component`. PR welcome !
 
 ---
 
