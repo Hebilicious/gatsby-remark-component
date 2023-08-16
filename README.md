@@ -1,6 +1,8 @@
-> 2020 Disclaimer: If you have a need for this package, consider using the [gatsby mdx plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx) instead.
+# This repository is now archived
 
-> Disclaimer : I haven't been maintaining this package. Look into forks like `@rstacruz/gatsby-remark-component`. PR welcome !
+2020 Disclaimer: If you have a need for this package, consider using the [gatsby mdx plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx) instead.
+
+Disclaimer : I haven't been maintaining this package. Look into forks like `@rstacruz/gatsby-remark-component`. PR welcome !
 
 ---
 
